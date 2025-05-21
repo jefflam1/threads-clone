@@ -1,3 +1,4 @@
+import { Link } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 
@@ -5,6 +6,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Hello world!</Text>
+      <Link href="/settings">Settings</Link>
       <StatusBar style="auto" />
     </View>
   );
