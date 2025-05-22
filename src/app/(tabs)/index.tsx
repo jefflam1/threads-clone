@@ -1,22 +1,9 @@
-import { Link } from "expo-router";
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from 'react-native';
 
-export default function App() {
+export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text>Hello world!</Text>
-      <Link href="/settings">Settings</Link>
-      <StatusBar style="auto" />
+    <View>
+      <Text className='text-red-500 text-2xl'>Feed</Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
