@@ -40,7 +40,7 @@ export const posts: Post[] = [
     content:
       'Just deployed my first React Native app! 🚀 The journey of learning mobile development has been incredible. What are your favorite RN libraries?',
     user: users[0],
-    createdAt: '2024-03-15T12:00:00.000Z',
+    createdAt: '2025-03-15T12:00:00.000Z',
     parent_id: null,
     parent: null,
     replies: [],
@@ -51,7 +51,7 @@ export const posts: Post[] = [
     content:
       '@jennawong Congrats! React Navigation and React Native Paper are must-haves in my projects.',
     user: users[1],
-    createdAt: '2024-03-15T12:30:00.000Z',
+    createdAt: '2025-03-15T12:30:00.000Z',
     parent_id: 'p1',
     parent: null,
     replies: [],
@@ -62,7 +62,7 @@ export const posts: Post[] = [
     content:
       "Working on a new design system. Here's a sneak peek of our component library 👩‍💻",
     user: users[2],
-    createdAt: '2024-03-15T13:00:00.000Z',
+    createdAt: '2025-03-15T13:00:00.000Z',
     parent_id: null,
     parent: null,
     replies: [],
@@ -72,7 +72,7 @@ export const posts: Post[] = [
     user_id: 'u4',
     content: 'TypeScript + React Native is the perfect combo! Who else agrees?',
     user: users[3],
-    createdAt: '2024-03-15T14:00:00.000Z',
+    createdAt: '2025-03-15T14:00:00.000Z',
     parent_id: null,
     parent: null,
     replies: [],
@@ -83,7 +83,7 @@ export const posts: Post[] = [
     content:
       '@mike.tech Absolutely! Type safety has saved me countless hours of debugging.',
     user: users[4],
-    createdAt: '2024-03-15T14:15:00.000Z',
+    createdAt: '2025-03-15T14:15:00.000Z',
     parent_id: 'p4',
     parent: null,
     replies: [],
@@ -94,7 +94,7 @@ export const posts: Post[] = [
     content:
       "Who's going to React Native Conf this year? Would love to meet up! 🤝",
     user: users[0],
-    createdAt: '2024-03-15T15:00:00.000Z',
+    createdAt: '2025-03-15T15:00:00.000Z',
     parent_id: null,
     parent: null,
     replies: [],
@@ -104,7 +104,7 @@ export const posts: Post[] = [
     user_id: 'u3',
     content: "@jennawong I'll be there! Let's definitely connect.",
     user: users[2],
-    createdAt: '2024-03-15T15:10:00.000Z',
+    createdAt: '2025-03-15T15:10:00.000Z',
     parent_id: 'p6',
     parent: null,
     replies: [],
@@ -115,7 +115,7 @@ export const posts: Post[] = [
     content:
       'Just published my first npm package for React Native animations! Check it out: react-native-smooth-animations',
     user: users[1],
-    createdAt: '2024-03-15T16:00:00.000Z',
+    createdAt: '2025-03-15T16:00:00.000Z',
     parent_id: null,
     parent: null,
     replies: [],
@@ -126,7 +126,7 @@ export const posts: Post[] = [
     content:
       'TIL: You can use React Native Web to run your mobile app in the browser! Game changer 🎮',
     user: users[3],
-    createdAt: '2024-03-15T17:00:00.000Z',
+    createdAt: '2025-03-15T17:00:00.000Z',
     parent_id: null,
     parent: null,
     replies: [],
@@ -137,7 +137,7 @@ export const posts: Post[] = [
     content:
       'Sharing my VS Code setup for React Native development. Thread below 🧵',
     user: users[4],
-    createdAt: '2024-03-15T18:00:00.000Z',
+    createdAt: '2025-03-15T18:00:00.000Z',
     parent_id: null,
     parent: null,
     replies: [],
@@ -148,7 +148,7 @@ export const posts: Post[] = [
     content:
       '1/ First, install these essential extensions:\n- React Native Tools\n- ESLint\n- Prettier\n- Auto Import',
     user: users[4],
-    createdAt: '2024-03-15T18:01:00.000Z',
+    createdAt: '2025-03-15T18:01:00.000Z',
     parent_id: 'p10',
     parent: null,
     replies: [],
@@ -159,7 +159,7 @@ export const posts: Post[] = [
     content:
       'Anyone else excited about the new React Native architecture? The performance improvements are incredible! 📱✨',
     user: users[2],
-    createdAt: '2024-03-15T19:00:00.000Z',
+    createdAt: '2025-03-15T19:00:00.000Z',
     parent_id: null,
     parent: null,
     replies: [],
@@ -170,7 +170,7 @@ export const posts: Post[] = [
     content:
       '@sarah.smith The new architecture is amazing! Have you migrated any production apps yet?',
     user: users[0],
-    createdAt: '2024-03-15T19:15:00.000Z',
+    createdAt: '2025-03-15T19:15:00.000Z',
     parent_id: 'p12',
     parent: null,
     replies: [],
@@ -181,7 +181,7 @@ export const posts: Post[] = [
     content:
       "Pro tip: Use React Native Performance Monitor to track your app's performance metrics in development.",
     user: users[1],
-    createdAt: '2024-03-15T20:00:00.000Z',
+    createdAt: '2025-03-15T20:00:00.000Z',
     parent_id: null,
     parent: null,
     replies: [],
@@ -192,7 +192,7 @@ export const posts: Post[] = [
     content:
       "Just achieved 60 FPS on our app's most complex screen! 🎉 Optimization tips coming soon...",
     user: users[3],
-    createdAt: '2024-03-15T21:00:00.000Z',
+    createdAt: '2025-03-15T21:00:00.000Z',
     parent_id: null,
     parent: null,
     replies: [],
