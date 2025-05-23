@@ -11,6 +11,7 @@ const fetchPosts = async () => {
   const { data } = await supabase
     .from('posts')
     .select('*, user:profiles(*)')
+    .order('created_at', { ascending: false })
     .throwOnError();
 
   return data;
