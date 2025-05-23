@@ -5,9 +5,11 @@ import {
   TouchableOpacity,
   KeyboardAvoidingView,
   Platform,
+  Alert,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
+import { supabase } from '@/lib/supabase';
 
 export default function LoginScreen() {
   const router = useRouter();
@@ -15,9 +17,25 @@ export default function LoginScreen() {
   const [password, setPassword] = useState<string>('');
   const [isLoading, setLoading] = useState<boolean>(false);
 
-  const handleLogin = () => {
+  const handleLogin = async () => {
     // Implement your login logic here
-    console.log('Login attempt with:', email, password);
+    if (!email || !password) {
+      Alert.alert('Please enter an email and passowrd');
+      return;
+    }
+    try {
+      setLoading(true);
+      const { error } = await supabase.auth.signInWithPassword({
+        email: email,
+        password: password,
+      });
+      if (error) Alert.alert(error.message);
+    } catch (error) {
+      console.error('Login error: ', error);
+      Alert.alert('Login error: ', error as string);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (

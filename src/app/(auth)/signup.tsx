@@ -5,9 +5,11 @@ import {
   TouchableOpacity,
   KeyboardAvoidingView,
   Platform,
+  Alert,
 } from 'react-native';
 import { useRouter } from 'expo-router';
 import { useState } from 'react';
+import { supabase } from '@/lib/supabase';
 
 export default function SignupScreen() {
   const router = useRouter();
@@ -15,8 +17,28 @@ export default function SignupScreen() {
   const [password, setPassword] = useState<string>('');
   const [isLoading, setLoading] = useState<boolean>(false);
 
-  const handleSignUp = () => {
-    // Implement your login logic here
+  const handleSignUp = async () => {
+    // Implement your sign up logic here
+    try {
+      setLoading(true);
+      const {
+        data: { session },
+        error,
+      } = await supabase.auth.signUp({
+        email: email,
+        password: password,
+      });
+
+      if (error) Alert.alert(error.message);
+
+      if (!session)
+        Alert.alert('Please check your inbox for email verification!');
+      console.log('Login attempt with:', { email });
+    } catch (error) {
+      console.error('Login error: ', error);
+    } finally {
+      setLoading(false);
+    }
     console.log('Login attempt with:', email, password);
   };
 
@@ -33,7 +55,7 @@ export default function SignupScreen() {
           </Text>
         </View>
 
-        {/* Login Form */}
+        {/* Signup Form */}
         <View className='gap-4'>
           {/* Email Input */}
           <View>

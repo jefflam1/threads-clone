@@ -1,10 +1,16 @@
-import { View, Text } from "react-native";
-import React from "react";
+import { View, Text } from 'react-native';
+import React from 'react';
+import { supabase } from '@/lib/supabase';
 
 const ProfileScreen = () => {
   return (
     <View>
-      <Text>ProfileScreen</Text>
+      <Text
+        onPress={() => supabase.auth.signOut()}
+        className='text-white text-2xl font-bold'
+      >
+        Sign out
+      </Text>
     </View>
   );
 };
